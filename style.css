@@ -1,0 +1,63 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+  }
+  
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+  }
+
+/* delete this class when not used */
+.container { 
+    width: 360px;
+    position: absolute;
+    height: fit-content;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d; /* Allow 3D transformations */
+    padding: 20px;
+    background-color: white;
+    width: 100%; /* width card */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);
+    border-radius: 20px;
+}
+
+.card img {
+    transform: translateZ(30px); /* 3D effect: bring image forward */
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
+.card:hover {
+    transform: rotateY(15deg) rotateX(5deg); /* Rotate card on hover */
+}
+
+.card-content {
+    transform: translateZ(30px); /* 3D effect: bring image forward */
+}
+
+.card-content h1{
+    font-family: 'Clash Grotesk', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+}
